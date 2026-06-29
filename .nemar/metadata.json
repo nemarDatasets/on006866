@@ -1,34 +1,75 @@
 {
   "version": "2.0",
-  "dataset_id": "on006866",
-  "source": "openneuro",
-  "source_id": "ds006866",
+  "pipeline_stage": "validated",
   "title": "Discrepancy between self-report and neurophysiological markers of socio-affective responses in lonely individuals",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Szymon Mąka": {},
     "Marta Chrustowicz": {},
     "Łukasz Okruszek": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006866.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006866",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006866",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "National Science Centre, Poland (Grant No: 2019/35/B/HS6/00517)"
+      "funder_name": "National Science Centre, Poland",
+      "award_number": "2019/35/B/HS6/00517"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "127.0 GB (299 files)"
+  ],
+  "formats": [
+    ".asv",
+    ".erp",
+    ".json",
+    ".m",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from 148 neurologically healthy adults performing an emotion processing and regulation task with static visual stimuli. Participants completed 240 trials in a 2×3 factorial design manipulating stimulus content (social vs. non-social) and regulation requirement (passive viewing of neutral or negative images, or cognitive reappraisal of negative images), with subsequent subjective ratings of arousal and valence. The study investigates discrepancies between self-reported and neurophysiological markers of socio-affective responses in lonely individuals.",
+  "methods_description": "EEG was recorded from 64 channels using a QuickCap and Neuroscan SynampsRT amplifier at 1000 Hz sampling rate with impedance maintained below 5 kΩ. Additional physiological signals included horizontal and vertical electrooculography, electrocardiography, and galvanic skin response. Preprocessing in MATLAB using EEGLAB and ERPLAB included band-pass filtering (0.1–30 Hz), downsampling to 250 Hz, average mastoid re-referencing, automatic bad-channel rejection, independent component analysis with ADJUST and SASICA for component rejection, spherical interpolation, epoching (−200 to 5000 ms), baseline correction, and artifact rejection (±100 µV threshold).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "emotion regulation"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "social cognition"
+    },
+    {
+      "term": "loneliness"
+    },
+    {
+      "term": "cognitive reappraisal"
+    }
+  ],
+  "source_hash": "e8372f9e11eeeebf3021a3db64ba118bedd01a98d5d13e905172ed04705ccb52"
 }
