@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006866-blue)](https://doi.org/10.82901/nemar.on006866)
+
 # Emotion Processing and Regulation Task (Static Stimuli) — EEG Dataset
 
 This dataset contains EEG recordings and behavioral data from the **Emotion Processing and Regulation** task with static emotional stimuli. 
