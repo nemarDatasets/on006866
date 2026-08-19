@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Discrepancy between self-report and neurophysiological markers of socio-affective responses in lonely individuals",
+  "description": "This dataset contains 64-channel EEG recordings and behavioral ratings from 148 healthy adults performing an Emotion Processing and Regulation task using static emotional images. The study examines discrepancies between self-reported and neurophysiological socio-affective responses in relation to loneliness, using a factorial design manipulating stimulus content (social/non-social) and regulation instructions (watch-neutral, watch-negative, reappraise-negative). Participants rated arousal and valence after viewing each stimulus, enabling analysis of the relationship between subjective and physiological emotional responses.",
+  "methods_description": "EEG was recorded using a 64-channel QuickCap and Neuroscan SynampsRT amplifier at 1000 Hz sampling rate, with impedances kept below 5 kΩ. Additional sensors included horizontal and vertical EOG, EKG, and GSR/EDA. Preprocessing was performed in MATLAB using EEGLAB and ERPLAB, including band-pass filtering (0.1–30 Hz), downsampling to 250 Hz, average mastoid re-referencing, automatic bad-channel rejection (clean_rawdata), ICA with ADJUST/SASICA component rejection, spherical interpolation, epoching (-200 to 5000 ms), baseline correction, artifact rejection, and condition averaging.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,6 +11,32 @@
     "Marta Chrustowicz": {},
     "Łukasz Okruszek": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "loneliness"
+    },
+    {
+      "term": "emotion regulation"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "reappraisal"
+    },
+    {
+      "term": "social cognition"
+    },
+    {
+      "term": "valence"
+    },
+    {
+      "term": "arousal"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006866.v1.0.0",
@@ -32,10 +60,10 @@
       "award_number": "2019/35/B/HS6/00517"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "127.0 GB (299 files)"
   ],
@@ -48,28 +76,6 @@
     ".set",
     ".tsv",
     ".yml"
-  ],
-  "description": "This dataset comprises EEG recordings from 148 neurologically healthy adults performing an emotion processing and regulation task with static visual stimuli. Participants completed 240 trials in a 2×3 factorial design manipulating stimulus content (social vs. non-social) and regulation requirement (passive viewing of neutral or negative images, or cognitive reappraisal of negative images), with subsequent subjective ratings of arousal and valence. The study investigates discrepancies between self-reported and neurophysiological markers of socio-affective responses in lonely individuals.",
-  "methods_description": "EEG was recorded from 64 channels using a QuickCap and Neuroscan SynampsRT amplifier at 1000 Hz sampling rate with impedance maintained below 5 kΩ. Additional physiological signals included horizontal and vertical electrooculography, electrocardiography, and galvanic skin response. Preprocessing in MATLAB using EEGLAB and ERPLAB included band-pass filtering (0.1–30 Hz), downsampling to 250 Hz, average mastoid re-referencing, automatic bad-channel rejection, independent component analysis with ADJUST and SASICA for component rejection, spherical interpolation, epoching (−200 to 5000 ms), baseline correction, and artifact rejection (±100 µV threshold).",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "emotion regulation"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "social cognition"
-    },
-    {
-      "term": "loneliness"
-    },
-    {
-      "term": "cognitive reappraisal"
-    }
   ],
   "source_hash": "e8372f9e11eeeebf3021a3db64ba118bedd01a98d5d13e905172ed04705ccb52"
 }
