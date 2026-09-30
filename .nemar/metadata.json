@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Discrepancy between self-report and neurophysiological markers of socio-affective responses in lonely individuals",
-  "description": "This dataset contains 64-channel EEG recordings and behavioral ratings from 148 healthy adults performing an Emotion Processing and Regulation task using static emotional images. The study examines discrepancies between self-reported and neurophysiological socio-affective responses in relation to loneliness, using a factorial design manipulating stimulus content (social/non-social) and regulation instructions (watch-neutral, watch-negative, reappraise-negative). Participants rated arousal and valence after viewing each stimulus, enabling analysis of the relationship between subjective and physiological emotional responses.",
-  "methods_description": "EEG was recorded using a 64-channel QuickCap and Neuroscan SynampsRT amplifier at 1000 Hz sampling rate, with impedances kept below 5 kΩ. Additional sensors included horizontal and vertical EOG, EKG, and GSR/EDA. Preprocessing was performed in MATLAB using EEGLAB and ERPLAB, including band-pass filtering (0.1–30 Hz), downsampling to 250 Hz, average mastoid re-referencing, automatic bad-channel rejection (clean_rawdata), ICA with ADJUST/SASICA component rejection, spherical interpolation, epoching (-200 to 5000 ms), baseline correction, artifact rejection, and condition averaging.",
+  "description": "EEG and behavioral data from 148 neurologically healthy adults performing an emotion processing and regulation task with static social and non-social images. Participants passively watched neutral or negative images or reappraised negative ones, then rated arousal and valence. The dataset supports examination of discrepancies between self-reported and neurophysiological markers of socio-affective responses in lonely individuals.",
+  "methods_description": "64-channel QuickCap EEG recorded with a Neuroscan SynampsRT amplifier at 1000 Hz, with additional EOG, EKG and GSR/EDA sensors. Each of 240 trials in a 2 (content: social, non-social) × 3 (watch-neutral, watch-negative, reappraise-negative) design presented a static image for 5 s, followed by arousal and valence ratings on 9-point scales. Preprocessing used EEGLAB and ERPLAB: 0.1-30 Hz filtering, downsampling to 250 Hz, mastoid re-referencing, clean_rawdata, ICA with ADJUST/SASICA, epoching, baseline correction and artifact rejection.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,25 +16,21 @@
       "term": "EEG"
     },
     {
-      "term": "loneliness"
+      "term": "Loneliness",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008132"
     },
     {
       "term": "emotion regulation"
     },
     {
+      "term": "cognitive reappraisal"
+    },
+    {
       "term": "event-related potentials"
     },
     {
-      "term": "reappraisal"
-    },
-    {
       "term": "social cognition"
-    },
-    {
-      "term": "valence"
-    },
-    {
-      "term": "arousal"
     }
   ],
   "related_identifiers": [
@@ -65,7 +61,7 @@
     "eeg"
   ],
   "sizes": [
-    "127.0 GB (299 files)"
+    "118 GB (299 files)"
   ],
   "formats": [
     ".asv",
